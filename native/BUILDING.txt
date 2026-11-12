@@ -1,0 +1,29 @@
+Personal Gallery - source of the SKSE plugin (PersonalGalleryNative.dll)
+Copyright (C) 2026 the Personal Gallery author
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU
+General Public License as published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without
+even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+General Public License for more details. The full licence is in LICENSE.txt.
+
+WHAT IS HERE
+  src/                 the plugin (C++23)
+  test/                two stand-alone test programs (not shipped)
+  CMakeLists.txt, vcpkg.json, vcpkg-configuration.json, build.bat    the build
+The mod's Papyrus scripts are in ../papyrus, or in the download under scripts/source (same licence).
+
+BUILDING
+1. Put CommonLibSSE-NG in external/CommonLibSSE:
+     git clone https://github.com/alandtse/CommonLibVR external/CommonLibSSE
+   (built against commit 8eaddedd1542290701ccb0e9e88b2af8b3cea597)
+2. Visual Studio with the C++ workload, CMake, Ninja and vcpkg. build.bat expects Visual Studio's
+   own copies; change the two paths at its top if yours are elsewhere.
+3. Run build.bat. The plugin is written to build/PersonalGalleryNative.dll.
+
+LIBRARIES
+  CommonLibSSE-NG by alandtse, CharmedBaryon, Ryan McKenzie and contributors - GPL-3.0-or-later
+  Dear ImGui by Omar Cornut and contributors - MIT
+  DirectXTex by Microsoft - MIT

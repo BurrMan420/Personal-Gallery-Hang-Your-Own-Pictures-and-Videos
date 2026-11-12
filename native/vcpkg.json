@@ -1,0 +1,60 @@
+﻿{
+    "$schema":  "https://raw.githubusercontent.com/microsoft/vcpkg/master/scripts/vcpkg.schema.json",
+    "name":  "personal-gallery-native",
+    "version-semver":  "15.5.0",
+    "port-version":  0,
+    "description":  "Personal Gallery SKSE helper",
+    "supports":  "windows \u0026 x64",
+    "builtin-baseline":  "ee12231b20c95013c6638d845d04c91559a1d1ff",
+    "dependencies":  [
+                         {
+                             "name":  "vcpkg-cmake-config",
+                             "host":  true
+                         },
+                         {
+                             "name":  "directxmath",
+                             "version\u003e=":  "2025-04-03"
+                         },
+                         {
+                             "name":  "directxtk",
+                             "version\u003e=":  "2025-10-27"
+                         },
+                         {
+                             "name":  "fmt",
+                             "version\u003e=":  "12.1.0"
+                         },
+                         {
+                             "name":  "nlohmann-json",
+                             "version\u003e=":  "3.12.0"
+                         },
+                         {
+                             "name":  "rapidcsv",
+                             "version\u003e=":  "8.90"
+                         },
+                         {
+                             "name":  "simpleini",
+                             "version\u003e=":  "4.25"
+                         },
+                         {
+                             "name":  "spdlog",
+                             "version\u003e=":  "1.16.0"
+                         },
+                         {
+                             "name":  "toml11",
+                             "version\u003e=":  "4.4.0"
+                         },
+                         {
+                             "name":  "xbyak",
+                             "version\u003e=":  "7.28"
+                         },
+                         {
+                             "name":  "directxtex"
+                         },
+                         {
+                             "name":  "imgui",
+                             "features":  [
+                                              "dx11-binding"
+                                          ]
+                         }
+                     ]
+}
